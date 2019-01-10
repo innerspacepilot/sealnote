@@ -1,0 +1,3 @@
+[submodule "cardslib"]
+	path = cardslib
+	url = git@github.com:innerspacepilot/cardslib.git
