@@ -1,1 +1,4 @@
-include ':Sealnote', ':aFileChooser'
+include ':Sealnote', ':aFileChooser', ':library-cards', ':library-core', ':extra:extra-staggeredgrid'
+project(':library-cards').projectDir = new File('cardslib/library-cards')
+project(':library-core').projectDir = new File('cardslib/library-core')
+project(':extra:extra-staggeredgrid').projectDir = new File('cardslib/extra/extra-staggeredgrid')
