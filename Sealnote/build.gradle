@@ -31,8 +31,8 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
 
-        versionCode 27
-        versionName "0.8.7"
+        versionCode 28
+        versionName "0.8.8"
     }
 
     signingConfigs {
@@ -51,6 +51,12 @@ android {
             debuggable false
             jniDebuggable false
             signingConfig signingConfigs.release
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "${applicationId}-${versionName}:${versionCode}-release.apk"
+                }
+            }
+
         }
         debug {
             debuggable true
